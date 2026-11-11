@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Share-Bill s",
+    "slug": "share-bill-s",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ứng dụng cần quyền sử dụng máy ảnh để chụp và quét hóa đơn.",
+        "NSPhotoLibraryUsageDescription": "Ứng dụng cần quyền truy cập thư viện ảnh để chọn ảnh hóa đơn và mã QR cá nhân."
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ứng dụng cần quyền truy cập thư viện ảnh để chọn hóa đơn và mã QR.",
+          "cameraPermission": "Ứng dụng cần quyền sử dụng camera để chụp hóa đơn."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
